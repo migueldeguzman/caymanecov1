@@ -1,6 +1,7 @@
 .hero {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex;
   align-items: center;
 
   height: 12.5em;

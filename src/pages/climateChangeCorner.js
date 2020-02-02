@@ -2,11 +2,11 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './blog.module.css'
+import styles from './climateChangeCorner.module.css'
 import Layout from "../components/layout"
 import ArticlePreview from '../components/article-preview'
 
-class BlogIndex extends React.Component {
+class ClimateChangeCorner extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -16,9 +16,10 @@ class BlogIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>
+
           </div>
           <div>
-          
+
           </div>
           <div className="wrapper">
             <h2 className="section-headline">Cayman Eco News</h2>
@@ -38,10 +39,10 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default ClimateChangeCorner
 
 export const pageQuery = graphql`
-  query BlogIndexQuery {
+  query ClimateChangeCornerIndex {
     site {
       siteMetadata {
         title
